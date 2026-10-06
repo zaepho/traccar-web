@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"><Document><name>POI icon test</name>
+<Style id="icon"><IconStyle><color>ffe5881e</color><scale>0.5</scale><Icon><href>http://localhost:18090/icon.svg</href></Icon></IconStyle></Style>
+<Style id="large"><IconStyle><color>ffe5881e</color><Icon><href>http://localhost:18090/icon.svg</href></Icon></IconStyle></Style>
+<Style id="dot"><IconStyle><color>ff2f7d2e</color></IconStyle></Style>
+<Style id="broken"><IconStyle><color>ff006cef</color><Icon><href>http://localhost:18090/missing.svg</href></Icon></IconStyle></Style>
+<Style id="area"><LineStyle><color>ff2f7d2e</color><width>2</width></LineStyle><PolyStyle><color>662f7d2e</color></PolyStyle></Style>
+<Placemark><name>Icon</name><styleUrl>#icon</styleUrl><Point><coordinates>-95.1678,29.6050,0</coordinates></Point></Placemark>
+<Placemark><name>Large icon</name><styleUrl>#large</styleUrl><Point><coordinates>-95.1672,29.6050,0</coordinates></Point></Placemark>
+<Placemark><name>Dot</name><styleUrl>#dot</styleUrl><Point><coordinates>-95.1678,29.6046,0</coordinates></Point></Placemark>
+<Placemark><name>Broken icon</name><styleUrl>#broken</styleUrl><Point><coordinates>-95.1672,29.6046,0</coordinates></Point></Placemark>
+<Placemark><name>Area</name><styleUrl>#area</styleUrl><Polygon><outerBoundaryIs><LinearRing><coordinates>-95.1685,29.6043,0 -95.1681,29.6043,0 -95.1681,29.6047,0 -95.1685,29.6047,0 -95.1685,29.6043,0</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
+<Placemark><name>Route</name><styleUrl>#area</styleUrl><LineString><coordinates>-95.1684,29.6052,0 -95.1676,29.6054,0 -95.1669,29.6052,0</coordinates></LineString></Placemark>
+</Document></kml>
